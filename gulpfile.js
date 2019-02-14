@@ -1,6 +1,8 @@
 "use strict";
 
 var gulp = require("gulp");
+var rename = require("gulp-rename");
+var del = require("del");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
