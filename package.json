@@ -7,10 +7,13 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^9.4.x",
     "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-plumber": "^1.2.x",
     "gulp-postcss": "^8.0.x",
+    "gulp-posthtml": "^3.0.4",
     "gulp-sass": "^4.0.x",
+    "gulp-imagemin": "^5.0.3",
     "stylelint": "^9.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
