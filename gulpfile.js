@@ -1,22 +1,30 @@
 "use strict";
 
 var gulp = require("gulp");
-var rename = require("gulp-rename");
-var del = require("del");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var css_sorting = require("postcss-sorting");
+var csso = require("gulp-csso");
+
 var server = require("browser-sync").create();
+
+var rename = require("gulp-rename");
+var del = require("del");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      css_sorting()
     ]))
     .pipe(gulp.dest("source/css"))
+  .pipe(csso())
+  .pipe(rename("style.min.css"))
+  .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
