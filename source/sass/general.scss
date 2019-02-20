@@ -5,7 +5,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
-  color: $text-grey;
+  color: $text-black;
   //text-transform: uppercase;
 
   background: $color-bg;
@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 img {
