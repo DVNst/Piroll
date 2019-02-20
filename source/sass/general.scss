@@ -1,0 +1,25 @@
+body {
+  margin: 0 auto;
+
+  font-family: "Nunito Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: $text-grey;
+  //text-transform: uppercase;
+
+  background: $color-bg;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.no-js {
+  display: none;
+}

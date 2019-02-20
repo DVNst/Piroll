@@ -1,5 +1,57 @@
-$color-bg: #f6f6f6;
+@import "variables";
+@import "fonts";
+@import "general";
 
-body {
-  background: $color-bg;
+;
+
+.main-header {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 29px;
+  background: $white;
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: 31px auto;
+  grid-column-gap: 30px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.logo-header__img {
+  width: 31px;
+  height: 25px;
+}
+
+.main-nav__list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 30px;
+  justify-items: end;
+  align-items: center;
+
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: $text-grey;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.main-nav__item {
+}
+
+.main-nav__link {
+  color: inherit;
+
+  &:hover {
+    color: $color-contrast;
+  }
 }
