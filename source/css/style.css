@@ -17,7 +17,8 @@ body {
   font-size: 18px;
   line-height: 28px;
   color: #171717;
-  background: #f6f6f6; }
+  background-color: #f6f6f6;
+  color: #171717; }
 
 a {
   text-decoration: none;
@@ -35,7 +36,8 @@ img {
   margin: 0 auto;
   padding-top: 38px;
   padding-bottom: 29px;
-  background: #ffffff; }
+  background: #ffffff;
+  color: #191919; }
 
 .main-nav {
   display: grid;
@@ -63,32 +65,26 @@ img {
   font-weight: 600;
   font-size: 12px;
   line-height: 24px;
-  color: #191919;
   list-style-type: none;
   text-transform: uppercase; }
-
-.main-nav__link {
-  color: inherit; }
-  .main-nav__link:hover {
-    color: #10c9c3; }
 
 .desc {
   display: grid;
   justify-items: center;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 60px 0; }
+  padding: 77px 0 95px; }
 
 .desc__title {
   margin: 0 auto;
   font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 38px;
   line-height: 84px;
   color: #171717; }
 
 .desc__text {
-  margin: 0 330px;
+  margin: 0 300px;
   text-align: center;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 300;
@@ -123,6 +119,66 @@ img {
     background-position: center center;
     opacity: 0.85;
     cursor: pointer; }
+
+.main-footer {
+  padding: 90px 0;
+  background-color: #141414;
+  color: #bcbcbc;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px; }
+
+.main-footer__wrapper {
+  display: grid;
+  grid-template-columns: 4fr 3fr 3fr 2fr;
+  grid-column-gap: 30px; }
+
+.copyright__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff; }
+
+.copyright__text {
+  margin: 0; }
+
+.contacts {
+  padding-left: 70px; }
+
+.contacts__link {
+  display: block; }
+
+.footer-nav {
+  padding-left: 70px; }
+
+.footer-nav__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-transform: capitalize; }
+
+.social {
+  padding-left: 70px; }
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-transform: capitalize; }
+
+.link {
+  color: inherit; }
+  .link:hover {
+    color: #10c9c3; }
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto; }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
