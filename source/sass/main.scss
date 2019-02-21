@@ -1,3 +1,16 @@
+.link {
+  color: inherit;
+
+  &:hover {
+    color: $color-contrast;
+  }
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 .main-header {
   width: 100%;
   margin: 0 auto;
@@ -46,7 +59,12 @@
 
 // .main-nav__item {}
 
-// .main-nav__link {}
+.main-nav__link {
+  &--active {
+    color: $color-contrast;
+    cursor: default;
+  }
+}
 
 // .main-page{}
 
@@ -199,16 +217,3 @@
 // .social__item {}
 
 // .social__link {}
-
-.link {
-  color: inherit;
-
-  &:hover {
-    color: $color-contrast;
-  }
-}
-
-.wrapper {
-  max-width: 1170px;
-  margin: 0 auto;
-}

@@ -16,7 +16,6 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
-  color: #171717;
   background-color: #f6f6f6;
   color: #171717; }
 
@@ -30,6 +29,15 @@ img {
 
 .no-js {
   display: none; }
+
+.link {
+  color: inherit; }
+  .link:hover {
+    color: #10c9c3; }
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto; }
 
 .main-header {
   width: 100%;
@@ -67,6 +75,10 @@ img {
   line-height: 24px;
   list-style-type: none;
   text-transform: uppercase; }
+
+.main-nav__link--active {
+  color: #10c9c3;
+  cursor: default; }
 
 .desc {
   display: grid;
@@ -107,14 +119,13 @@ img {
 .works_item {
   position: relative; }
   .works_item:hover::before {
-    font-family: "Pe-icon-7-stroke";
     content: "";
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
     background-color: #10c9c3;
-    background-image: url(../img/look.svg);
+    background-image: url("../img/look.svg");
     background-repeat: no-repeat;
     background-position: center center;
     opacity: 0.85;
@@ -170,15 +181,6 @@ img {
   padding: 0;
   list-style-type: none;
   text-transform: capitalize; }
-
-.link {
-  color: inherit; }
-  .link:hover {
-    color: #10c9c3; }
-
-.wrapper {
-  max-width: 1170px;
-  margin: 0 auto; }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
