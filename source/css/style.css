@@ -58,6 +58,23 @@ img {
   max-width: 1170px;
   margin: 0 auto; }
 
+.btn {
+  border: none;
+  padding: 21px 53px;
+  margin: 0 auto;
+  background-color: #10c9c3;
+  color: #ffffff;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease; }
+  .btn:hover {
+    background-color: #141414;
+    color: #ffffff; }
+
 .main-header {
   width: 100%;
   margin: 0 auto;
@@ -353,22 +370,74 @@ img {
   text-align: center;
   color: #787878; }
 
-.btn {
-  border: none;
-  padding: 22px 53px;
-  margin: 0 auto;
-  background-color: #10c9c3;
-  color: #ffffff;
+.contact {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding: 100px 0; }
+
+.contact__info {
+  margin-right: 130px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #787878; }
+
+.contact__title {
+  margin: 0;
+  margin-bottom: 30px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 12px;
-  text-transform: uppercase;
-  -webkit-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease; }
-  .btn:hover {
-    background-color: #141414;
-    color: #ffffff; }
+  font-size: 30px;
+  line-height: 30px; }
+
+.contact__desc {
+  margin: 0;
+  margin-bottom: 28px; }
+
+.contact__text {
+  margin: 0;
+  margin-bottom: 15px; }
+
+.contact__text span {
+  color: #171717; }
+
+.contact__form {
+  margin-bottom: 100px; }
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px; }
+
+.input {
+  border: none;
+  padding: 12px 15px;
+  font-family: "Nunito Sans", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px; }
+  .input::-webkit-input-placeholder {
+    color: #787878; }
+  .input:-ms-input-placeholder {
+    color: #787878; }
+  .input::-ms-input-placeholder {
+    color: #787878; }
+  .input::placeholder {
+    color: #787878; }
+
+.form__title,
+.form__comment {
+  grid-column: 1 / 3; }
+
+.form__btn {
+  margin-left: 0;
+  padding: 21px 41px; }
+
+.contact__map {
+  grid-column: 1 / 3;
+  width: 1170px;
+  height: 470px;
+  background-color: #141414;
+  background-image: url("../img/bg-map.jpg"); }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
