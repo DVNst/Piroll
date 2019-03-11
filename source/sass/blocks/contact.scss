@@ -1,0 +1,50 @@
+.contact {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding: 100px 0;
+}
+
+.contact__info {
+  margin-right: 130px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-grey;
+}
+
+.contact__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.contact__desc {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.contact__text {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.contact__text span {
+  color: $text-black;
+}
+
+.contact__form {
+  margin-bottom: 100px;
+}
+
+.contact__map {
+  grid-column: 1 / 3;
+
+  width: 1170px;
+  height: 470px;
+
+  background-color: $bg-black;
+  background-image: url("../img/contact/bg-map.jpg");
+}

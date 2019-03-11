@@ -1,0 +1,26 @@
+.desc {
+  display: grid;
+  justify-items: center;
+  padding: 77px 0 95px;
+}
+
+.desc__title {
+  margin: 0 auto;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 84px;
+  color: $text-black;
+}
+
+.desc__text {
+  margin: 0 300px;
+
+  text-align: center;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: $text-grey;
+}

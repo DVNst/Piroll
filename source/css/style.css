@@ -49,14 +49,29 @@ img {
 .no-js {
   display: none; }
 
-.link {
-  color: inherit; }
-  .link:hover {
-    color: #10c9c3; }
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
 
 .container {
   max-width: 1170px;
   margin: 0 auto; }
+
+.link {
+  color: inherit; }
+  .link:hover {
+    color: #10c9c3; }
 
 .btn {
   border: none;
@@ -75,6 +90,22 @@ img {
     background-color: #141414;
     color: #ffffff; }
 
+.input {
+  border: none;
+  padding: 12px 15px;
+  font-family: "Nunito Sans", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px; }
+  .input::-webkit-input-placeholder {
+    color: #787878; }
+  .input:-ms-input-placeholder {
+    color: #787878; }
+  .input::-ms-input-placeholder {
+    color: #787878; }
+  .input::placeholder {
+    color: #787878; }
+
 .main-header {
   width: 100%;
   margin: 0 auto;
@@ -87,10 +118,6 @@ img {
   display: grid;
   grid-template-columns: 31px auto;
   grid-column-gap: 30px; }
-
-.logo-header__img {
-  width: 31px;
-  height: 25px; }
 
 .main-nav__list {
   display: grid;
@@ -113,6 +140,10 @@ img {
 .main-nav__link--active {
   color: #10c9c3;
   cursor: default; }
+
+.logo-header__img {
+  width: 31px;
+  height: 25px; }
 
 .desc {
   display: grid;
@@ -222,7 +253,7 @@ img {
   position: relative;
   background-color: #141414;
   color: #ffffff;
-  background-image: url("../img/header-about-me.jpg");
+  background-image: url("../img/about/about-me-header.jpg");
   background-repeat: no-repeat;
   background-position: center 42%;
   background-size: cover;
@@ -281,16 +312,16 @@ img {
     height: 40px;
     background-repeat: no-repeat; }
   .achievements__item--projects::before {
-    background-image: url("../img/portfolio.svg");
+    background-image: url("../img/achievements/portfolio.svg");
     background-size: 100%; }
   .achievements__item--hours::before {
-    background-image: url("../img/clock.svg");
+    background-image: url("../img/achievements/clock.svg");
     background-size: 100%; }
   .achievements__item--feedbacks::before {
-    background-image: url("../img/star.svg");
+    background-image: url("../img/achievements/star.svg");
     background-size: 100%; }
   .achievements__item--clients::before {
-    background-image: url("../img/like.svg");
+    background-image: url("../img/achievements/like.svg");
     background-size: 100%; }
 
 .achievements__amount {
@@ -309,7 +340,7 @@ img {
   line-height: 12px; }
 
 .about-me {
-  background-image: url("../img/about-me.jpg");
+  background-image: url("../img/about/about-me.jpg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: auto 100%; }
@@ -403,26 +434,17 @@ img {
 .contact__form {
   margin-bottom: 100px; }
 
+.contact__map {
+  grid-column: 1 / 3;
+  width: 1170px;
+  height: 470px;
+  background-color: #141414;
+  background-image: url("../img/contact/bg-map.jpg"); }
+
 .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px; }
-
-.input {
-  border: none;
-  padding: 12px 15px;
-  font-family: "Nunito Sans", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 24px; }
-  .input::-webkit-input-placeholder {
-    color: #787878; }
-  .input:-ms-input-placeholder {
-    color: #787878; }
-  .input::-ms-input-placeholder {
-    color: #787878; }
-  .input::placeholder {
-    color: #787878; }
 
 .form__title,
 .form__comment {
@@ -431,25 +453,3 @@ img {
 .form__btn {
   margin-left: 0;
   padding: 21px 41px; }
-
-.contact__map {
-  grid-column: 1 / 3;
-  width: 1170px;
-  height: 470px;
-  background-color: #141414;
-  background-image: url("../img/bg-map.jpg"); }
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden; }

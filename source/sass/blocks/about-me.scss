@@ -1,0 +1,38 @@
+.about-me {
+  background-image: url("../img/about/about-me.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 100%;
+}
+
+.about-me__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-me__wrapper-right-column {
+  grid-column: 2 / 3;
+
+  margin: 112px 0;
+}
+
+.about-me__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.about-me__text {
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.about-me__signature {
+  margin-top: 2px;
+  width: 222px;
+  height: 57px;
+}

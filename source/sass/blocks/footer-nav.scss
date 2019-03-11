@@ -1,0 +1,17 @@
+.footer-nav {
+  padding-left: 70px;
+}
+
+.footer-nav__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+// .footer-nav__item {}
+
+// .footer-nav__link {}

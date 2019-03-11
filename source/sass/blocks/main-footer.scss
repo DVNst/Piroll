@@ -1,0 +1,24 @@
+.main-footer {
+  padding: 90px 0;
+
+  background-color: $bg-black;
+  color: $text-lightgrey;
+
+  // font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.main-footer__wrapper {
+  display: grid;
+  grid-template-columns: 4fr 3fr 3fr 2fr;
+  grid-column-gap: 30px;
+}
+
+// .main-footer__copyright {}
+
+// .main-footer__contacts {}
+
+// .main-footer__nav {}
+
+// .main-footer__social {}

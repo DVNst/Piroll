@@ -1,0 +1,15 @@
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.form__title,
+.form__comment {
+  grid-column: 1 / 3;
+}
+
+.form__btn {
+  margin-left: 0;
+  padding: 21px 41px;
+}

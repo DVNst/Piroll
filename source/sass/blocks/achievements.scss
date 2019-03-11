@@ -1,0 +1,81 @@
+.achievements {
+  padding: 90px 0;
+  background-color: $color-contrast;
+  color: $white;
+}
+
+.achievements__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.achievements__item {
+  padding-left: 70px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+
+    background-repeat: no-repeat;
+  }
+
+  &--projects {
+    &::before {
+      background-image: url("../img/achievements/portfolio.svg");
+      background-size: 100%;
+    }
+  }
+
+  &--hours {
+    &::before {
+      background-image: url("../img/achievements/clock.svg");
+      background-size: 100%;
+    }
+  }
+
+  &--feedbacks {
+    &::before {
+      background-image: url("../img/achievements/star.svg");
+      background-size: 100%;
+    }
+  }
+
+  &--clients {
+    &::before {
+      background-image: url("../img/achievements/like.svg");
+      background-size: 100%;
+    }
+  }
+}
+
+.achievements__amount {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.achievements__title {
+  margin: 0;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+}

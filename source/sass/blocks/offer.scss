@@ -1,0 +1,35 @@
+.offer {
+  padding: 95px 0;
+
+  background-color: $white;
+  color: $text-black;
+}
+
+.offer__wrapper {
+  display: grid;
+  align-items: center;
+}
+
+.offer__title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.offer__text {
+  margin: 0;
+  margin-bottom: 38px;
+  padding: 0 290px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $text-grey;
+}

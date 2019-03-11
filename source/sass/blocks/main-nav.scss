@@ -1,0 +1,35 @@
+.main-nav {
+  display: grid;
+  grid-template-columns: 31px auto;
+  grid-column-gap: 30px;
+}
+
+// .main-nav__logo {}
+
+.main-nav__list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 30px;
+  justify-items: end;
+  align-items: center;
+
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+// .main-nav__item {}
+
+.main-nav__link {
+  &--active {
+    color: $color-contrast;
+    cursor: default;
+  }
+}
