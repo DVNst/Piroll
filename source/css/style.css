@@ -468,6 +468,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 28px; }
 
+.contact__address {
+  font-style: normal; }
+
 .contact__text {
   margin: 0;
   margin-bottom: 15px; }
