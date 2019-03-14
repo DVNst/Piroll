@@ -1,7 +1,7 @@
 .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
+  grid-gap: $gap;
 }
 
 .form__title,

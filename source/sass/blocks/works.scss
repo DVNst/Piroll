@@ -12,6 +12,10 @@
 
   list-style-type: none;
   line-height: 0;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .works_item {
@@ -44,3 +48,7 @@
 }
 
 // .works__link {}
+
+.works__img {
+  width: 100%;
+}

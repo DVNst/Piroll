@@ -12,13 +12,35 @@
 .main-footer__wrapper {
   display: grid;
   grid-template-columns: 4fr 3fr 3fr 2fr;
-  grid-column-gap: 30px;
+  grid-gap: $gap;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    grid-template-columns: 3fr 2fr 2fr 1fr;
+  }
 }
 
 // .main-footer__copyright {}
 
-// .main-footer__contacts {}
+.main-footer__contacts {
+  padding-left: 70px;
 
-// .main-footer__nav {}
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding-left: 0;
+  }
+}
 
-// .main-footer__social {}
+.main-footer__nav {
+  padding-left: 70px;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding-left: 0;
+  }
+}
+
+.main-footer__social {
+  padding-left: 70px;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding-left: 30px;
+  }
+}

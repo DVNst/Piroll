@@ -66,6 +66,7 @@ input[type="radio"].visually-hidden {
 
 .container {
   max-width: 1170px;
+  padding: 0 30px;
   margin: 0 auto; }
 
 .link {
@@ -106,6 +107,10 @@ input[type="radio"].visually-hidden {
   .input::placeholder {
     color: #787878; }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 0 60px; } }
+
 .main-header {
   width: 100%;
   margin: 0 auto;
@@ -117,12 +122,12 @@ input[type="radio"].visually-hidden {
 .main-nav {
   display: grid;
   grid-template-columns: 31px auto;
-  grid-column-gap: 30px; }
+  grid-gap: 30px; }
 
 .main-nav__list {
   display: grid;
   grid-auto-flow: column;
-  grid-column-gap: 30px;
+  grid-gap: 30px;
   justify-items: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -145,10 +150,11 @@ input[type="radio"].visually-hidden {
   width: 31px;
   height: 25px; }
 
-.desc {
+.desc_wrapper {
   display: grid;
   justify-items: center;
-  padding: 77px 0 95px; }
+  padding: 77px 0 95px;
+  text-align: center; }
 
 .desc__title {
   margin: 0 auto;
@@ -159,13 +165,15 @@ input[type="radio"].visually-hidden {
   color: #171717; }
 
 .desc__text {
-  margin: 0 300px;
-  text-align: center;
+  margin: 0 20%;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
   color: #787878; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .desc__text {
+      margin: 0 15%; } }
 
 .works {
   margin: 0 auto;
@@ -178,6 +186,9 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style-type: none;
   line-height: 0; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .works_list {
+      grid-template-columns: repeat(3, 1fr); } }
 
 .works_item {
   position: relative; }
@@ -199,6 +210,9 @@ input[type="radio"].visually-hidden {
     opacity: 0.85;
     cursor: pointer; }
 
+.works__img {
+  width: 100%; }
+
 .main-footer {
   padding: 90px 0;
   background-color: #141414;
@@ -209,7 +223,28 @@ input[type="radio"].visually-hidden {
 .main-footer__wrapper {
   display: grid;
   grid-template-columns: 4fr 3fr 3fr 2fr;
-  grid-column-gap: 30px; }
+  grid-gap: 30px; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .main-footer__wrapper {
+      grid-template-columns: 3fr 2fr 2fr 1fr; } }
+
+.main-footer__contacts {
+  padding-left: 70px; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .main-footer__contacts {
+      padding-left: 0; } }
+
+.main-footer__nav {
+  padding-left: 70px; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .main-footer__nav {
+      padding-left: 0; } }
+
+.main-footer__social {
+  padding-left: 70px; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .main-footer__social {
+      padding-left: 30px; } }
 
 .copyright__title {
   margin: 0;
@@ -223,14 +258,8 @@ input[type="radio"].visually-hidden {
 .copyright__text {
   margin: 0; }
 
-.contacts {
-  padding-left: 70px; }
-
 .contacts__link {
   display: block; }
-
-.footer-nav {
-  padding-left: 70px; }
 
 .footer-nav__list {
   display: grid;
@@ -240,9 +269,6 @@ input[type="radio"].visually-hidden {
   list-style-type: none;
   text-transform: capitalize; }
 
-.social {
-  padding-left: 70px; }
-
 .social__list {
   margin: 0;
   padding: 0;
@@ -251,6 +277,7 @@ input[type="radio"].visually-hidden {
 
 .hello {
   position: relative;
+  padding: 110px 0;
   background-color: #141414;
   color: #ffffff;
   background-image: url("../img/about/about-me-header-desktop@1x.jpg");
@@ -263,14 +290,14 @@ input[type="radio"].visually-hidden {
     content: "";
     width: 100%;
     height: 100%;
+    top: 0;
     background-color: #141414;
     opacity: 0.6;
     z-index: -1; }
 
 .hello__wrapper {
   display: grid;
-  justify-items: center;
-  padding: 110px 0; }
+  justify-items: center; }
 
 .hello__title {
   margin: 0;
@@ -283,8 +310,11 @@ input[type="radio"].visually-hidden {
 
 .hello_text {
   margin: 0;
-  padding: 0 330px;
+  padding: 0 26%;
   text-align: center; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .hello_text {
+      padding: 0 15%; } }
 
 .achievements {
   padding: 90px 0;
@@ -294,7 +324,7 @@ input[type="radio"].visually-hidden {
 .achievements__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 30px;
+  grid-gap: 30px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -338,20 +368,24 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   font-size: 12px;
   line-height: 12px; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .achievements__title {
+      word-spacing: 50px; } }
 
 .about-me {
   background-image: url("../img/about/about-me-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: center center;
   background-size: auto 100%; }
 
 .about-me__wrapper {
+  padding: 112px 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
 
 .about-me__wrapper-right-column {
   grid-column: 2 / 3;
-  margin: 112px 0; }
+  padding-left: 86px; }
 
 .about-me__title {
   margin: 0;
@@ -393,24 +427,34 @@ input[type="radio"].visually-hidden {
 .offer__text {
   margin: 0;
   margin-bottom: 38px;
-  padding: 0 290px;
+  padding: 0 20%;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: #787878; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .offer__text {
+      padding: 0 15%; } }
 
-.contact {
+.contact_wrapper {
   display: grid;
   grid-template-columns: 5fr 7fr;
+  grid-gap: 30px;
   padding: 100px 0; }
 
 .contact__info {
-  margin-right: 130px;
+  margin-right: 100px;
   font-size: 16px;
   line-height: 24px;
   color: #787878; }
+  @media (min-width: 1025px) and (max-width: 1365px) {
+    .contact__info {
+      margin-right: 50px; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .contact__info {
+      margin-right: 20px; } }
 
 .contact__title {
   margin: 0;
@@ -436,7 +480,6 @@ input[type="radio"].visually-hidden {
 
 .contact__map {
   grid-column: 1 / 3;
-  width: 1170px;
   height: 470px;
   background-color: #141414;
   background-image: url("../img/contact/bg-map.jpg"); }

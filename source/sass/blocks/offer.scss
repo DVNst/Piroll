@@ -24,7 +24,7 @@
 .offer__text {
   margin: 0;
   margin-bottom: 38px;
-  padding: 0 290px;
+  padding: 0 20%;
 
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
@@ -32,4 +32,8 @@
   line-height: 24px;
   text-align: center;
   color: $text-grey;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding: 0 15%;
+  }
 }

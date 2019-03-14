@@ -1,19 +1,20 @@
 .about-me {
   background-image: url("../img/about/about-me-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: center center;
   background-size: auto 100%;
 }
 
 .about-me__wrapper {
+  padding: 112px 0;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .about-me__wrapper-right-column {
   grid-column: 2 / 3;
-
-  margin: 112px 0;
+  padding-left: 86px;
 }
 
 .about-me__title {

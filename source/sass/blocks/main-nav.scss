@@ -1,7 +1,7 @@
 .main-nav {
   display: grid;
   grid-template-columns: 31px auto;
-  grid-column-gap: 30px;
+  grid-gap: $gap;
 }
 
 // .main-nav__logo {}
@@ -9,7 +9,7 @@
 .main-nav__list {
   display: grid;
   grid-auto-flow: column;
-  grid-column-gap: 30px;
+  grid-gap: $gap;
   justify-items: end;
   align-items: center;
 

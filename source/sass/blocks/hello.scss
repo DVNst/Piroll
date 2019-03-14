@@ -1,5 +1,6 @@
 .hello {
   position: relative;
+  padding: 110px 0;
 
   background-color: $bg-black;
   color: $white;
@@ -14,6 +15,7 @@
     content: "";
     width: 100%;
     height: 100%;
+    top: 0;
 
     background-color: $bg-black;
     opacity: 0.6;
@@ -24,7 +26,6 @@
 .hello__wrapper {
   display: grid;
   justify-items: center;
-  padding: 110px 0;
 }
 
 .hello__title {
@@ -40,7 +41,11 @@
 
 .hello_text {
   margin: 0;
-  padding: 0 330px;
+  padding: 0 26%;
 
   text-align: center;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding: 0 15%;
+  }
 }

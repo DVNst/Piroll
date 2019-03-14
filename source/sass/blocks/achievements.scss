@@ -7,7 +7,7 @@
 .achievements__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 30px;
+  grid-gap: $gap;
 
   margin: 0;
   padding: 0;
@@ -78,4 +78,8 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    word-spacing: 50px;
+  }
 }
