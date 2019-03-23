@@ -16,6 +16,10 @@
   @media (min-width: $tablet) and (max-width: $desktop) {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media (max-width: ($tablet - 1px)) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .works_item {

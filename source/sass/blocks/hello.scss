@@ -10,6 +10,10 @@
   background-size: cover;
   z-index: -2;
 
+  @media screen and (max-width: $tablet - 1px) {
+    background-image: url("../img/about/about-me-header-mobile@1x.jpg");
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -20,6 +24,10 @@
     background-color: $bg-black;
     opacity: 0.6;
     z-index: -1;
+  }
+
+  @media (max-width: $tablet - 1px) {
+    padding: 60px 0;
   }
 }
 
@@ -37,6 +45,13 @@
   font-size: 38px;
   line-height: 48px;
   text-align: center;
+
+  @media (max-width: $tablet - 1px) {
+    font-size: 28px;
+    line-height: 28px;
+
+    margin-bottom: 20px;
+  }
 }
 
 .hello_text {
@@ -47,5 +62,9 @@
 
   @media (min-width: $tablet) and (max-width: $desktop) {
     padding: 0 15%;
+  }
+
+  @media (max-width: $tablet - 1px) {
+    padding: 0;
   }
 }

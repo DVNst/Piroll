@@ -3,6 +3,10 @@
 
   background-color: $white;
   color: $text-black;
+
+  @media (max-width: $tablet - 1px) {
+    padding: 60px 0;
+  }
 }
 
 .offer__wrapper {
@@ -19,6 +23,13 @@
   font-size: 30px;
   line-height: 30px;
   text-align: center;
+
+  @media (max-width: $tablet - 1px) {
+    margin-bottom: 20px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .offer__text {
@@ -35,5 +46,16 @@
 
   @media (min-width: $tablet) and (max-width: $desktop) {
     padding: 0 15%;
+  }
+
+  @media (max-width: $tablet - 1px) {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.offer__btn {
+  @media (max-width: $tablet - 240px) {
+    margin: 0;
   }
 }

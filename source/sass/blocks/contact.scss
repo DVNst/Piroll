@@ -5,6 +5,11 @@
   grid-template-columns: 5fr 7fr;
   grid-gap: $gap;
   padding: 100px 0;
+
+  @media (max-width: $tablet - 1px) {
+    padding: 60px 0;
+    grid-template-columns: 1fr;
+  }
 }
 
 .contact__info {
@@ -20,6 +25,10 @@
   @media (min-width: $tablet) and (max-width: $desktop) {
     margin-right: 20px;
   }
+
+  @media (max-width: $tablet - 1px) {
+    margin: 0;
+  }
 }
 
 .contact__title {
@@ -30,14 +39,25 @@
   font-weight: 500;
   font-size: 30px;
   line-height: 30px;
+
+  @media (max-width: $tablet - 1px) {
+    margin-bottom: 20px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .contact__desc {
   margin: 0;
   margin-bottom: 28px;
+
+  @media (max-width: $tablet - 1px) {
+    margin-bottom: 15px;
+  }
 }
 
-.contact__address{
+.contact__address {
   font-style: normal;
 }
 
@@ -52,6 +72,10 @@
 
 .contact__form {
   margin-bottom: 100px;
+
+  @media (max-width: $tablet - 1px) {
+    margin-bottom: 60px;
+  }
 }
 
 .contact__map {
@@ -60,5 +84,13 @@
   height: 470px;
 
   background-color: $bg-black;
-  background-image: url("../img/contact/bg-map.jpg");
+  background-image: url("../img/contact/bg-map-desktop@1x.jpg");
+  background-position: center center;
+  background-size: cover;
+
+  @media (max-width: $tablet - 1px) {
+    grid-column: auto;
+
+    background-image: url("../img/contact/bg-map-mobile@1x.jpg");
+  }
 }

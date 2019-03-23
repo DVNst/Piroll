@@ -6,6 +6,10 @@
   padding: 77px 0 95px;
 
   text-align: center;
+
+  @media (max-width: $tablet - 1px) {
+    padding: 60px 0;
+  }
 }
 
 .desc__title {
@@ -16,6 +20,13 @@
   font-size: 38px;
   line-height: 84px;
   color: $text-black;
+
+  @media (max-width: $tablet - 1px) {
+    margin: 0;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .desc__text {
@@ -29,5 +40,13 @@
 
   @media (min-width: $tablet) and (max-width: $desktop) {
     margin: 0 15%;
+  }
+
+  @media (max-width: $tablet - 1px) {
+    margin: 0;
+    margin-top: 20px;
+
+    font-size: 16px;
+    line-height: 22px;
   }
 }

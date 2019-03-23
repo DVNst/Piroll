@@ -9,6 +9,10 @@
   font-size: 18px;
   line-height: 18px;
   color: $white;
+
+  @media (max-width: $tablet - 1px) {
+    margin-bottom: 10px;
+  }
 }
 
 .copyright__text {

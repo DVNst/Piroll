@@ -2,23 +2,47 @@
   padding: 90px 0;
   background-color: $color-contrast;
   color: $white;
+
+  @media (max-width: $tablet - 1px) {
+    padding: 60px 0;
+  }
 }
 
 .achievements__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: $gap;
+  grid-row-gap: $gap * 2;
 
   margin: 0;
   padding: 0;
 
   list-style-type: none;
   text-transform: uppercase;
+
+  @media (max-width: $tablet - 1px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .achievements__item {
   padding-left: 70px;
   position: relative;
+
+  @media (max-width: $tablet - 1px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $gap;
+    grid-row-gap: $gap / 2;
+    justify-items: center;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 0;
+    //padding-top: 50px;
+
+    text-align: center;
+  }
 
   &::before {
     position: absolute;
@@ -30,6 +54,14 @@
     height: 40px;
 
     background-repeat: no-repeat;
+
+    @media (max-width: $tablet - 1px) {
+      position: static;
+      justify-self: end;
+      //top: 0;
+      //left: 50%;
+      //transform: translateX(-50%);
+    }
   }
 
   &--projects {
@@ -69,6 +101,11 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
+
+  @media (max-width: $tablet - 1px) {
+    margin: 0;
+    justify-self: start;
+  }
 }
 
 .achievements__title {
@@ -81,5 +118,9 @@
 
   @media (min-width: $tablet) and (max-width: $desktop) {
     word-spacing: 50px;
+  }
+
+  @media (max-width: $tablet - 1px) {
+    grid-column: 1/3;
   }
 }
