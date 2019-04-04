@@ -22,7 +22,10 @@
   }
 }
 
-.works_item {
+// .works_item {}
+
+.works__link {
+  display: block;
   position: relative;
 
   &::before {
@@ -50,8 +53,6 @@
     }
   }
 }
-
-// .works__link {}
 
 .works__img {
   width: 100%;
