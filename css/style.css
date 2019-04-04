@@ -482,7 +482,8 @@ input[type="radio"].visually-hidden {
     @media (max-width: 767px) {
       .achievements__item::before {
         position: static;
-        justify-self: end; } }
+        justify-self: end;
+        margin-left: auto; } }
   .achievements__item--projects::before {
     background-image: url("../img/achievements/portfolio.svg");
     background-size: 100%; }

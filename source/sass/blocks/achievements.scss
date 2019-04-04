@@ -58,9 +58,7 @@
     @media (max-width: $tablet - 1px) {
       position: static;
       justify-self: end;
-      //top: 0;
-      //left: 50%;
-      //transform: translateX(-50%);
+      margin-left: auto;
     }
   }
 
