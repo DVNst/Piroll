@@ -1,0 +1,87 @@
+.work-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: $gap;
+  justify-items: center;
+  align-content: center;
+
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.work-nav__link {
+  position: relative;
+  align-self: center;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    top: -3px;
+  }
+
+  &--previous {
+    justify-self: start;
+
+    padding-left: 20px;
+
+    &::before {
+      left: 0;
+
+      background-image: url("../img/angle-left.svg");
+      background-size: 100%;
+    }
+  }
+
+  &--all {
+    width: 16px;
+    height: 16px;
+
+    background-color: $text-black;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 4px;
+      height: 16px;
+      top: 0;
+      left: 6px;
+
+      background-color: $white;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 4px;
+      top: 6px;
+
+      background-color: $white;
+    }
+
+    &:hover {
+      background-color: $color-contrast;
+    }
+  }
+
+  &--next {
+    justify-self: end;
+    padding-right: 20px;
+
+    &::before {
+      right: 0;
+
+      background-image: url("../img/angle-right.svg");
+      background-size: 100%;
+    }
+  }
+}
