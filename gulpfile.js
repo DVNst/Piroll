@@ -48,9 +48,9 @@ gulp.task('images', () =>
   gulp.src('source/img/**/*.{png,jpg,svg}')
     .pipe(imagemin([
       imgCompress({
-        loops: 4,
+        loops: 6,
         min: 70,
-        max: 80,
+        max: 90,
         quality: 'high'
       }),
       imagemin.gifsicle(),      
