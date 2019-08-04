@@ -11,6 +11,7 @@ var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 
 var imagemin = require('gulp-imagemin');
+var imgCompress  = require('imagemin-jpeg-recompress');
 var webp = require('gulp-webp');
 
 var server = require('browser-sync').create();
@@ -44,10 +45,17 @@ gulp.task('html', () =>
 );
 
 gulp.task('images', () =>
-  gulp.src('source/img/*.{png,jpg,svg}')
+  gulp.src('source/img/**/*.{png,jpg,svg}')
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
+      imgCompress({
+        loops: 4,
+        min: 70,
+        max: 80,
+        quality: 'high'
+      }),
+      imagemin.gifsicle(),      
       imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest(dir + '/img'))
@@ -83,6 +91,7 @@ gulp.task('server', function () {
     ui: false
   });
 
+  gulp.watch('source/img/**/*', ['images']);
   gulp.watch('source/sass/**/*.{scss,sass}', ['css']);
   gulp.watch('source/*.html',  ['html']).on('change', server.reload);
 });

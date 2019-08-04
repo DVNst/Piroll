@@ -17,6 +17,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.x",
     "gulp-webp": "^3.0.0",
+    "imagemin-jpeg-recompress": "^6.0.0",
     "postcss-sorting": "^4.0.1",
     "posthtml-include": "^1.2.0",
     "run-sequence": "^2.2.1",
